@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>Stations</h1>
+
+<table border="1">
+{% for s in stations %}
+<tr>
+<td>{{ s.name }}</td>
+<td>{{ s.service_name }}</td>
+<td>{{ s.type }}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>

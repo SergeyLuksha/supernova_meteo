@@ -1,0 +1,18 @@
+.marker {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(136, 54, 0);
+  border-radius: 10px;
+  background-color: rgb(255, 153, 0);
+  opacity: 0.5;
+}
+.marker-text {
+  text-decoration: none;
+  color: white;
+  font-size: 14pt;
+  font-weight: bold;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+.popover-body {
+  min-width: 276px;
+}
