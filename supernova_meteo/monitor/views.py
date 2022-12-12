@@ -188,9 +188,9 @@ def visualize_param(request):
   auth = AuthHmacMetosGet(apiRoute, publicKey, privateKey)
   response = requests.get(apiURI + apiRoute, headers={'Accept': 'application/json'}, auth=auth)
   response_data_json = response.json();
-  print(response_data_json)
-  with open('station_data.json', 'w', encoding='utf-8') as f:
-      json.dump(response.json(), f, ensure_ascii=False, indent=4)
+  # print(response_data_json)
+  # with open('station_data.json', 'w', encoding='utf-8') as f:
+  #     json.dump(response.json(), f, ensure_ascii=False, indent=4)
 
   template = loader.get_template('visualize_param.html')
   param_data = []
